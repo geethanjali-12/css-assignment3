@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: grey;
+  color:white;
+}
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.content {
+  padding: 20px;
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+  padding: 10px 20px;
+  background-color: rgb(126, 102, 102);
+  color: #fff;
+}
+@media (min-width: 450px) and (max-width: 600px) {
+  body {
+    background-color: #789ec0;
+  }
+
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }}
+  .content h1 {
+    font-size: 1.5em;
+  }
+@media (min-width: 600px) and (max-width: 900px) {
+  body {
+    background-color: #c4e796;
+  }
+
+  .header {
+    justify-content: space-around;
+  }
+
+  .content h1 {
+    font-size: 2em;
+  }
+
+  .content p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: auto;
+  }
+
+  .footer {
+    font-size: 1.1em;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">MyLogo</div>
+        <button class="signup-btn">Sign Up</button>
+      </header>
+      <main class="content">
+        <h1>Welcome to Our Page</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quibusdam facere, nam doloribus aliquam debitis voluptas architecto possimus. Reiciendis nobis quisquam libero quo a veritatis quaerat illum itaque dolore assumenda.</p>
+      </main>
+      <footer class="footer">
+        <p>© 2025 MyWebsite. All rights reserved.</p>
+      </footer>
+</body>
+</html>
